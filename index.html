@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Add LUTs - Text2 | Áp LUT (.cube) lên ảnh trực tuyến</title>
+  <title>Add LUTs - Text2 | Apply LUT (.cube) to Images Online</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1722731267767270"
   crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="link icon">
@@ -18,8 +18,8 @@
 </script>
 
 
-  <meta name="description" content="Add LUTs - Text2: Áp LUT 3D (.cube) lên ảnh trực tuyến bằng nội suy trilinear, chạy 100% trên trình duyệt. Hỗ trợ kéo thả, xử lý hàng loạt, tối ưu cho mobile và PC." />
-  <meta name="keywords" content="Add LUTs - Text2, add luts, áp LUT, LUT 3D, .cube, color grading, chỉnh màu, Text2" />
+  <meta name="description" content="Add LUTs - Text2: Apply 3D LUT (.cube) to images online using trilinear interpolation, runs 100% in browser. Supports drag & drop, batch processing, optimized for mobile and PC." />
+  <meta name="keywords" content="Add LUTs, LUT 3D, .cube files, color grading, color correction, image processing, online LUT, free LUT converter, Text2" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://luts.text2.click/" />
   <link rel="icon" type="image/x-icon" href="https://luts.text2.click/favicon.ico" />
@@ -28,21 +28,29 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Text2" />
   <meta property="og:url" content="https://luts.text2.click/" />
-  <meta property="og:title" content="Add LUTs - Text2 | Áp LUT (.cube) lên ảnh trực tuyến" />
-  <meta property="og:description" content="Add LUTs - Text2: Áp LUT 3D (.cube) lên ảnh trực tuyến bằng nội suy trilinear, chạy 100% trên trình duyệt." />
+  <meta property="og:title" content="Add LUTs - Text2 | Apply LUT (.cube) to Images Online" />
+  <meta property="og:description" content="Add LUTs - Text2: Apply 3D LUT (.cube) to images online using trilinear interpolation, runs 100% in browser." />
   <meta property="og:image" content="https://luts.text2.click/favicon.ico" />
-  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Add LUTs - Text2 | Áp LUT (.cube) lên ảnh trực tuyến" />
-  <meta name="twitter:description" content="Add LUTs - Text2: Áp LUT 3D (.cube) lên ảnh trực tuyến, chạy 100% trên trình duyệt." />
+  <meta name="twitter:title" content="Add LUTs - Text2 | Apply LUT (.cube) to Images Online" />
+  <meta name="twitter:description" content="Add LUTs - Text2: Apply 3D LUT (.cube) to images online, runs 100% in browser." />
   <meta name="twitter:image" content="https://luts.text2.click/favicon.ico" />
-  <link rel="alternate" hreflang="vi" href="https://luts.text2.click/" />
+  <link rel="alternate" hreflang="en" href="https://luts.text2.click/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "WebApplication",
     "name": "Add LUTs - Text2",
     "url": "https://luts.text2.click/",
+    "description": "Apply 3D LUT (.cube) to images online using trilinear interpolation",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "Text2",
@@ -113,51 +121,51 @@
 </head>
 <body>
   <header>
-    <div class="start-button" onclick="window.location.href='https://text2.click'" title="Trang chủ Text2">
+    <div class="start-button" onclick="window.location.href='https://text2.click'" title="Text2 Home">
       <img src="https://luts.text2.click/favicon.ico" alt="Text2" />
       <span style="font-weight:600">Text2</span>
     </div>
-    <div class="app-title">Áp LUT (.cube) lên ảnh</div>
+    <div class="app-title">Apply LUT (.cube) to Images</div>
   </header>
   <main>
     <div class="page-head">
       <div>
-        <h1>Trình áp LUT 3D (.cube)</h1>
-        <p>Kéo thả hoặc chọn ảnh và file .cube. Xử lý bằng nội suy trilinear, chạy trực tiếp trên trình duyệt.</p>
+        <h1>3D LUT (.cube) Application Tool</h1>
+        <p>Drag and drop or select images and .cube files. Processed using trilinear interpolation, runs directly in your browser.</p>
       </div>
     </div>
 
     <div class="grid">
       <div class="card">
-        <h2>Chọn tệp</h2>
-        <label for="imgFiles"><strong>1) Ảnh nguồn (chọn nhiều)</strong></label>
+        <h2>Select Files</h2>
+        <label for="imgFiles"><strong>1) Source Images (select multiple)</strong></label>
         <input id="imgFiles" type="file" accept="image/*" multiple>
-        <div class="hint">Ảnh lớn có thể xử lý chậm. Nên resize trước nếu cần.</div>
+        <div class="hint">Large images may process slowly. Consider resizing if needed.</div>
         <hr>
-        <label for="lutFiles"><strong>2) LUT (.cube) — có thể chọn nhiều</strong></label>
+        <label for="lutFiles"><strong>2) LUT (.cube) — can select multiple</strong></label>
         <input id="lutFiles" type="file" accept=".cube" multiple>
         <div id="lutInfo" class="lut-info"></div>
-        <label for="lutSelect" style="margin-top:10px"><strong>Chọn LUT để áp dụng</strong></label>
+        <label for="lutSelect" style="margin-top:10px"><strong>Select LUT to apply</strong></label>
         <select id="lutSelect"></select>
-        <div class="drop-hint">Tip: Kéo thả ảnh và LUT vào trang để thêm nhanh.</div>
+        <div class="drop-hint">Tip: Drag and drop images and LUTs onto the page for quick addition.</div>
         <hr>
         <div class="btn-row">
-          <button id="applyAllBtn" class="btn-accent" disabled>Áp LUT cho tất cả ảnh</button>
-          <button id="clearBtn" class="btn-danger">Xóa danh sách</button>
+          <button id="applyAllBtn" class="btn-accent" disabled>Apply LUT to All Images</button>
+          <button id="clearBtn" class="btn-danger">Clear List</button>
         </div>
       </div>
 
       <div class="card">
-        <h2>Ảnh đã chọn</h2>
+        <h2>Selected Images</h2>
         <div id="imagesGrid" class="gallery"></div>
       </div>
       <div class="card">
-        <h2>Kết quả</h2>
+        <h2>Results</h2>
         <div id="resultsGrid" class="gallery"></div>
       </div>
     </div>
   </main>
-  <footer>© 2024 <a href="https://text2.click" target="_blank" rel="noopener">Text2</a> • Làm việc hoàn toàn trên máy của bạn, không upload dữ liệu.</footer>
+  <footer>© 2024 <a href="https://text2.click" target="_blank" rel="noopener">Text2</a> • Works entirely on your device, no data upload.</footer>
 
   <script>
   // Helpers
@@ -194,9 +202,9 @@
         }
       }
     }
-    if(!size) throw new Error('Không tìm thấy LUT_3D_SIZE trong file .cube');
+    if(!size) throw new Error('LUT_3D_SIZE not found in .cube file');
     const expected = size*size*size*3;
-    if(dataLines.length < expected) throw new Error('File LUT có ít dòng dữ liệu hơn yêu cầu: '+dataLines.length+' < '+expected);
+    if(dataLines.length < expected) throw new Error('LUT file has fewer data lines than required: '+dataLines.length+' < '+expected);
     // Store data into Float32Array in index order: lut[(b*size + g)*size + r]
     const data = new Float32Array(size*size*size*3);
     // Many .cube files list entries with R fastest, then G, then B — we'll assume that order.
@@ -296,7 +304,7 @@
       opt.textContent = `${l.name} — ${l.size}³`;
       lutSelectEl.appendChild(opt);
     });
-    lutInfo.textContent = currentLUTs.length ? `Đã tải ${currentLUTs.length} LUT` : '';
+    lutInfo.textContent = currentLUTs.length ? `Loaded ${currentLUTs.length} LUTs` : '';
   }
 
   function renderImages(){
@@ -306,7 +314,7 @@
       const title = document.createElement('div'); title.className='item-title'; title.textContent = `${it.fileName} (${it.width}×${it.height})`;
       const img = document.createElement('img'); img.className='thumb'; img.src = it.thumbUrl;
       const row = document.createElement('div'); row.className='mini-row';
-      const removeBtn = document.createElement('button'); removeBtn.textContent='Xóa'; removeBtn.className='btn-danger';
+      const removeBtn = document.createElement('button'); removeBtn.textContent='Remove'; removeBtn.className='btn-danger';
       removeBtn.onclick = ()=>{ URL.revokeObjectURL(it.thumbUrl); currentImages.splice(idx,1); renderImages(); updateButtonsState(); };
       row.appendChild(document.createElement('div'));
       row.appendChild(removeBtn);
@@ -329,7 +337,7 @@
         const url = c.toDataURL('image/jpeg',0.85);
         currentImages.push({fileName:f.name, img, width:w, height:h, thumbUrl:url});
         renderImages(); updateButtonsState();
-      }catch(err){ alert('Không thể mở ảnh: '+err.message); }
+      }catch(err){ alert('Cannot open image: '+err.message); }
     });
   }
 
@@ -342,7 +350,7 @@
         const lutObj = parseCube(text);
         currentLUTs.push({name:f.name, size:lutObj.size, data:lutObj.data});
         renderLUTSelect(); updateButtonsState();
-      }catch(err){ alert('Lỗi khi đọc LUT: '+err.message); }
+      }catch(err){ alert('Error reading LUT: '+err.message); }
     });
   }
 
@@ -376,7 +384,7 @@
     const title = document.createElement('div'); title.className='item-title'; title.textContent = `${fileName} • ${lutName}`;
     const img = document.createElement('img'); img.className='thumb'; img.src=url;
     const row = document.createElement('div'); row.className='mini-row';
-    const dlBtn = document.createElement('button'); dlBtn.className='btn-accent'; dlBtn.textContent='Tải';
+    const dlBtn = document.createElement('button'); dlBtn.className='btn-accent'; dlBtn.textContent='Download';
     dlBtn.onclick = ()=>{ const a=document.createElement('a'); a.href=url; a.download=`${fileBaseName(fileName)}_${fileBaseName(lutName)}.png`; document.body.appendChild(a); a.click(); a.remove(); };
     row.appendChild(document.createElement('div'));
     row.appendChild(dlBtn);
@@ -396,17 +404,17 @@
   }
 
   applyAllBtn.addEventListener('click', async ()=>{
-    if(!(currentImages.length && currentLUTs.length)) return alert('Vui lòng thêm ảnh và LUT.');
+    if(!(currentImages.length && currentLUTs.length)) return alert('Please add images and LUTs.');
     const lutIndex = parseInt(lutSelectEl.value || '0',10) || 0;
     const lut = currentLUTs[lutIndex];
-    applyAllBtn.disabled = true; const originalText = applyAllBtn.textContent; applyAllBtn.textContent = 'Đang xử lý...';
+    applyAllBtn.disabled = true; const originalText = applyAllBtn.textContent; applyAllBtn.textContent = 'Processing...';
     resultsGrid.innerHTML = '';
     for(let i=0;i<currentImages.length;i++){
-      applyAllBtn.textContent = `Đang xử lý (${i+1}/${currentImages.length})...`;
+      applyAllBtn.textContent = `Processing (${i+1}/${currentImages.length})...`;
       try{
         const blob = await processImageWithLUT(currentImages[i], lut);
         appendResultCard(currentImages[i].fileName, lut.name, blob);
-      }catch(err){ alert('Lỗi khi xử lý ảnh: '+err.message); }
+      }catch(err){ alert('Error processing image: '+err.message); }
     }
     applyAllBtn.textContent = originalText; applyAllBtn.disabled = false;
   });
